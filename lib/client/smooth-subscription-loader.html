@@ -1,0 +1,14 @@
+<template name='smoothSubscriptionLoader'>
+	<div class='smooth-subscription-loader-wrapper'>
+		<div class='smooth-subscription-loader'>
+			{{#if loader}}
+				{{>loader}}
+			{{else}}
+				Loading...
+			{{/if}}
+		</div>
+		<div class='smooth-subscription-loader-content-block'>
+			{{> UI.contentBlock}}
+		</div>
+	</div>
+</template>
